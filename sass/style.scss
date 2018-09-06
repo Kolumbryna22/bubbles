@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.bubbles {
+    display: flex;
+}
+
+.bubbles-container {
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+.bubble-main,
+.bubble-additional {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(125, 206, 233);
+    background: radial-gradient(at 30% 30%, white, rgb(125, 206, 233));
+    border-radius: 50%;
+    color: blue;
+
+    p {
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        word-wrap: break-word;
+    }
+}
+
+.bubble-main {
+    height: 200px;
+    width: 200px;
+    top: 60px;
+    left: 60px;
+}
+
+.bubble-additional {
+    height: 130px;
+    width: 130px;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
